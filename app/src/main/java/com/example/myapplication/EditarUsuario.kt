@@ -15,7 +15,7 @@ class EditarUsuario : AppCompatActivity() {
         setContentView(R.layout.activity_editar_usuario)
         val id = intent.getIntExtra("id",0)
 
-        val usuario = ESqliteHelperUsuario(this).consultarUsuarioPorId(id)
+        val usuarioObtenido = ESqliteHelperUsuario(this).consultarUsuarioPorId(id)
         val textId = findViewById<TextView>(
             R.id.txt_idE
         )
@@ -29,8 +29,8 @@ class EditarUsuario : AppCompatActivity() {
             R.id.txt_info
         )
         textId.setText(id.toString())
-        textNombre.setText(usuario!!.nombre)
-        textDescip.setText(usuario!!.descipcion)
+        textNombre.setText(usuarioObtenido!!.nombre)
+        textDescip.setText(usuarioObtenido!!.descipcion)
 
 
         val botonActualizar = findViewById<Button>(
