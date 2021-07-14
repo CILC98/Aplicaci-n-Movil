@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.google.android.material.bottomappbar.BottomAppBar
 import java.sql.SQLClientInfoException
-
+//se realizan cambios
 class EditarUsuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
